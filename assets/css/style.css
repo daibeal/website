@@ -242,6 +242,22 @@ h6 {
   color: #fff;
 }
 
+.carousel-caption{
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  /* center vertically */
+  top: 30%;
+  height: 140px;
+}
+
+/* format .carousel-caption a as button */
+.carousel-caption a{
+  color: #00fbff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
 .nav-menu a:hover span,
 .nav-menu li:hover>a span {
   display: block;

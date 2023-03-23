@@ -1318,3 +1318,10 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+/* Make this element invisible transFrame*/
+#transFrame {
+  display: none;
+  /* hieght 0 */
+  height: 0;
+}

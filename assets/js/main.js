@@ -383,3 +383,21 @@ particlesJS('particles-js',
   }
 
 );
+
+
+// if form with id transFrame is submitted, alert the user
+// do not use jqyery here, it will not work
+
+document.getElementById('form-main').onsubmit = function() {
+  // alert('Thank you for your submission');
+  // get elemtn with class .sent-message and show it
+  document.querySelector('.sent-message').style.display = 'block';
+  // dissapear after 5 seconds
+  setTimeout(function() {
+    document.querySelector('.sent-message').style.display = 'none';
+  }, 5000);
+  
+  // hide the form
+  // document.querySelector('#form-main').style.display = 'none';
+}
+

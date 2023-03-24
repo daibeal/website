@@ -1,10 +1,4 @@
-/**
-* Template Name: MyResume
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -401,3 +395,22 @@ document.getElementById('form-main').onsubmit = function() {
   // document.querySelector('#form-main').style.display = 'none';
 }
 
+
+// in mobile set .carousel-caption margin bottom in relation to the height of the image to place it in the middle
+
+
+
+
+// set background color of div .see-more to animate and change color every 5 seconds
+
+function centerVertically() {
+  var imgHeight = document.querySelector('.carousel-item img').clientHeight;
+  var captionHeight = document.querySelector('.carousel-caption').clientHeight;
+  var margin = (imgHeight - captionHeight) / 2;
+  //select all elements with class .carousel-caption and set margin bottom to margin + px
+  document.querySelectorAll('.carousel-caption').forEach(function(el) {
+    el.style.marginBottom = margin + 'px';
+  }, true);
+}
+
+centerVertically();
